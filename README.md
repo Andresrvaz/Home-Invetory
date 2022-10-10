@@ -70,10 +70,12 @@ Instalar los siguientes programas
 4.4.1.-Si obtemenos este mensaje podemos confirmar que la instalación fue correcta
 
 5.-Usar la aplicación Web
-5.1-Descargar todos los archivos al escritorio en un folder de nombre a su elección
+5.1-Descargar todos los archivos en formato zip
+  5.1.1 Mover el archivo zip a el escritorio
+  5.1.2 Extraer los archivos al folder con el mismo nombre que el formato zip
 5.2-Abrir Hyper Terminal
-  5.2.1 Navegar al escritorio usando el comando "cd /Desktop/(nombre de folder de su elección)"
-  5.2.2 Una vez en el folder donde se encuentra los archivos utilizar el comando "npm install"
+  5.2.1 Navegar al escritorio usando el comando "cd /Desktop/CRUD-FacturaTech-master"
+  5.2.2 Una vez en el folder donde se encuentran los archivos utilizar el comando "npm install"
 5.3-Utilizar el comando "npm start"
   5.3.1 Si obtenemos "Server up and running on port 5000" la aplicación esta lista para usarse
 5.4 Abrir buscador (chrome)
