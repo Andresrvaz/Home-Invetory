@@ -1,0 +1,35 @@
+function palindrome(str) {
+
+let sentence = [];
+let reverseSentence = [];
+let regex = /[a-z0-9]/gi
+ sentence = str.toLowerCase().match(regex)
+let trueCount = 0;
+
+for(let i=0; i<sentence.length; i++){
+  reverseSentence.unshift(sentence[i]);
+}
+
+console.log(reverseSentence)
+console.log(sentence)
+
+for(let x=0; x<sentence.length; x++){
+  if(sentence[x] === reverseSentence[x]){
+    console.log(sentence[x], reverseSentence[x], sentence[x] === reverseSentence[x])
+    trueCount++;
+  }else {
+    console.log("false")
+    return false;
+  }
+}
+
+if(trueCount === sentence.length){
+  return true;
+}
+
+
+
+  
+}
+
+palindrome("1 eye for of 1 eye");
