@@ -32,4 +32,4 @@ if(trueCount === sentence.length){
   
 }
 
-palindrome("1 eye for of 1 eye");
+palindrome("inserte una oración");
