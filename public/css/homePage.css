@@ -1,0 +1,14 @@
+body{
+    background-image: url("https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2FzYXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1920&q=1080");
+}
+
+.intro{
+    padding-top: 80px;
+    padding: 30px;
+    background-color: rgba(1,5,6,.45);
+    color: #ffffff;
+    display: block;
+    max-width: 600px;
+    min-width: 300px;
+    height: auto;
+}

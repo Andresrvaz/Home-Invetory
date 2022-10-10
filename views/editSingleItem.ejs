@@ -1,0 +1,51 @@
+<%- include ("header") -%>
+<link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+
+<div class="container"> 
+<div class="page-container">
+    <%- include ("navbar") -%>
+
+    <h1>Edit Single Item</h1>
+<div class="grid">
+    <div>
+        <form action="/update-item" method="POST">
+            <article class="card product-item">
+                <header class="card__header">
+                    <label for="newItemName">Name
+                        <input name="newItemName" class="product__title" value="<%= item.name %>" ></h1>
+                    </label>
+                </header>
+                <div class="card__image">
+                    <img src="<%= item.imageURL %>" alt="image" contenteditable>
+                </div>
+                <div class="card__content">
+                    <label for="newItemImageURL">Image URL
+                        <input type="text" name="newItemImageURL" value="<%= item.imageURL %>">
+                    </label>
+                    <label for="newItemQuantity"> Quantity
+                        <input name="newItemQuantity" type="number" value="<%= item.quantity %>">
+                    </label>
+                    <label for="newItemDescription"> Description
+                        <input name="newItemDescription" type="text" value="<%= item.description %>">
+                    </label>    
+                </div>
+                <div class="card__actions">
+                    <button name="editBtn" onclick="this.form.submit()" class="btn" value="<%= item.id %>">Confirm Edit</button>
+                </div>
+            </article>
+        </form>
+        <form action="/delete-item" method="POST">
+            <input style="display:none">
+            <button name="deleteBtn" onclick="this.form.submit()" class="btn deleteBtn" value="<%= item.id %>">Delete</button>
+        </form>
+    </div>
+</div>
+</div>
+</div>
+
+
+
+<%- include ("footer") -%>

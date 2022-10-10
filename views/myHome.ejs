@@ -1,0 +1,39 @@
+<%- include ("header") -%>
+<link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="container"> 
+        <div class="page-container">
+<%- include ("navbar") -%>
+
+    <h1>Welcome Home</h1>
+
+    <%  foundItems.length === 0 ? greeting ="There isn't any items in your home" : greeting="All items in your home"%>
+
+    <h2><%- greeting %></h2>
+<div class="grid">
+    <% foundItems.forEach(item => { %>
+        <form action="/edit-item" method="POST">
+            <article class="card product-item">
+                <header class="card__header">
+                    <h1 class="product__title"><%= item.name %></h1>
+                </header>
+                <div class="card__image">
+                    <img src="<%= item.imageURL %>" alt="image">
+                </div>
+                <div class="card__content">
+                    <h3 class="product_quantity"> <%= item.quantity %> </h3>
+                    <p class="prodcut__description"><%= item.description %></p>
+                </div>
+                <div class="card__actions">
+                    <button name="editBtn" onclick="this.form.submit()" class="btn" value="<%= item.id %>">Edit</button>
+                </div>
+            </article>
+        </form>
+    <% }) %>
+</div>
+    <% foundItems.length === 0 ? addMessage = "Start Adding Items" : addMessage= "Add More Items" %> 
+    <button class="dynamicAdd"><a href="/myHome/items-managment"><%- addMessage %></a></button>
+</div>
+</div>
+<%- include ("footer") %>

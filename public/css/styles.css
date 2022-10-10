@@ -1,0 +1,183 @@
+
+h2{
+  padding: 1rem;
+}
+
+.container{
+  margin:0;
+  padding: 0;
+  position: relative;
+  min-height: 100vh;
+}
+
+.page-container{
+  padding-top: 100px;
+  padding-bottom: 2.5rem;
+}
+  
+  .navHeader{
+    background-color: #5C8D89;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    display: flex;
+    align-items: center;
+  }
+
+  .navHeader h1{
+    padding-left: 10px;
+  }
+
+  .navHeader li{
+    margin: 20px;
+    font-size: 1.2rem;
+    color:#ffffff
+  }
+
+  .navHeader *{
+    display: inline;
+  }
+
+  .navHeader li a{
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+img{
+    width: 2rem;
+    height: 15rem;
+}
+
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  
+  .card {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  }
+  
+  .card__header,
+  .card__content {
+    padding: 1rem;
+  }
+  
+  .card__header h1,
+  .card__content h1,
+  .card__content h2,
+  .card__content p {
+    margin: 0;
+  }
+  
+  .card__image {
+    width: 100%;
+  }
+  
+  .card__image img {
+    width: 100%;
+  }
+  
+  .card__actions {
+      padding: 1rem;
+      text-align: center;
+  }
+  
+  .card__actions button,
+  .card__actions a {
+      margin: 0 0.25rem;
+      bottom:0;
+      position:relative;
+  }
+  
+  .btn {
+    font: inherit;
+    border: 1px solid rgb(44, 95, 235);
+    color: rgb(44, 95, 235);
+    background: white;
+    border-radius: 3px;
+    cursor: pointer;
+    bottom: 0;
+    position:relative;
+  }
+  
+  .btn:hover,
+  .btn:active {
+    background-color: rgb(44, 95, 235);
+    color: white;
+  }
+
+  .deleteBtn{
+    border: 1px solid rgb(255, 0, 0);
+    color: rgb(255, 0, 0);
+  }
+
+  .deleteBtn:hover,
+  .deleteBtn:active{
+    background-color: rgb(255, 0, 0);
+    color: #ffffff
+  }
+
+  .bottomContainer{
+    position: relative;
+    bottom: 0;
+    height: 20px;
+    background-color: #ffffff;
+  }
+
+.bottomContainer{
+margin: -8px;
+
+}
+
+label{
+  display: block;
+  padding-top: 10px;
+  margin: auto 10px;
+}
+
+ input, textarea{
+  width: 80%;
+  display: block;
+  margin: auto;
+  padding: 10px 10px 10px 10px;
+}
+
+.addingForm{
+  background-color: #A7D7C5;
+  width: 60vh;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+}
+
+footer{
+  color: #ffffff;
+  background-color: #5C8D89;
+  height: 100%;
+  align-content: center;
+  text-align: center;
+}
+
+
+
+
+.startButton{
+  position: absolute;
+  bottom: 2rem;
+  right: 3rem;
+}
+
+.startBtn, .dynamicAdd{
+  background-color: #A7D7C5;
+  font-size: 2rem;
+}
+
+.startBtn a, .dynamicAdd a{
+  color: #ffffff;
+  text-decoration: none;
+  border-style: 1000px solid #74B49B;
+}

@@ -1,0 +1,20 @@
+<%- include ("header") -%>
+<link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="container"> 
+        <div class="page-container">
+            <h1>Add New Item</h1>
+<%- include ("navbar") -%>
+<div class="addingForm">
+    <form class="adding-Form" action="/myHome/items-managment" method="POST">
+        <label for="itemName"> Item Title<input type="text" name="itemName" placeholder='18" Knife, Pizza Tray...' required></label>
+        <label> Item Description<textarea type="text" cols="25" rows="5" name="itemDescription" placeholder="Knife for cutting cheese" required ></textarea></label>
+        <label> Item ImageURL<input type="url" name="imageURL" placeholder="https://imagehosted.com"></label>
+        <label> Item Quantity<input type="number" name="quantity" min="1" max="2000" placeholder="1" required ></label>
+        <button type="submit">Add</button>
+    </form>
+</div>
+</div>
+</div>
+<%- include ("footer") -%>
