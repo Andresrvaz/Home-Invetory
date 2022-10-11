@@ -76,6 +76,7 @@ Instalar los siguientes programas
 5.2-Abrir Hyper Terminal
   5.2.1 Navegar al escritorio usando el comando "cd /Desktop/CRUD-FacturaTech-master"
   5.2.2 Una vez en el folder donde se encuentran los archivos utilizar el comando "npm install"
+  5.2.3 Abrir una pestaña adicional e introducir el comando "mongod"
 5.3-Utilizar el comando "npm start"
   5.3.1 Si obtenemos "Server up and running on port 5000" la aplicación esta lista para usarse
 5.4 Abrir buscador (chrome)
