@@ -1,4 +1,4 @@
-# CRUD-FacturaTech
+# Home-Inventory
 Crud Básico de una apliación web para el control del inventario de objetos en casa. 
 
 Necesario para el uso y modificación de este proyecto. 
